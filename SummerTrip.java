@@ -10,7 +10,6 @@ public class SummerTrip {
 		char lastChar;
 		String subIt = null;
 		int goodItCount = 0;
-		//boolean goodIt = true;
 		for (int i = 0; i < str.length(); i++) {
 			for (int j = i+2; j <= str.length(); j++) {
 				itName = str.substring(i, j);
@@ -21,11 +20,9 @@ public class SummerTrip {
 						subIt = itName.substring(1, itName.length()-1);
 						if (subIt.indexOf(firstChar) <0 && subIt.indexOf(lastChar) <0) {
 							goodItCount++;
-							//System.out.println(itName);
 						}
 					} else {
 						goodItCount++;
-						//System.out.println(itName);
 					}
 				}
 			}
